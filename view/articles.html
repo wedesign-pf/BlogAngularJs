@@ -1,0 +1,15 @@
+<!-- Liste des articles -->
+<div class="container" ng-controller="ArticlesCtrl">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Liste des articles</h1>
+            <hr>
+        </div>
+        <div class="col-sm-12" ng-repeat="article in articles">
+            <h2>{{article.title}}</h2>
+            <p>{{article.text}}</p>
+            <a ng-href="article/{{article.id}}">Lire la suite</a>
+            <hr>
+        </div>
+    </div>
+</div>
